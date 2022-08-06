@@ -1,16 +1,8 @@
 # drinks
 
-A new Flutter project.
+A simple flutter application used for listing drinks from api using Dio pakage and json serializable for creating model class.
+We also included a search bar for searching drinks from the list.
 
-## Getting Started
+sample
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![sample](https://user-images.githubusercontent.com/71429125/183250921-a040fbc6-e563-43c1-adcb-a8df1658e7ae.gif)
