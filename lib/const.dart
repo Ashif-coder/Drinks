@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const whiteColor = Color(0xffFAFAFA);
 const yellowColor = Color(0xffFAD431);
 const yellowShadowColor = Color(0xffFFEE63);
-const orangeTextColor =Color(0xffFF5B00);
+const whiteTextColor =Colors.white;
 const blackColor = Color(0xff000000);
 
 

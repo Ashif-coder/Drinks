@@ -111,20 +111,22 @@ class _HomeState extends State<Home> {
                     physics: const BouncingScrollPhysics(),
                     padding: const EdgeInsets.symmetric(vertical: 0),
                     itemCount: dataItems.length,
-                    itemBuilder: (context, index) => OpenContainer(
-                      closedColor: whiteColor,
-                      openColor: whiteColor,
-                      transitionDuration: const Duration(milliseconds: 600),
-                        openBuilder: (context, _) => DrinkDetail(index: index,),
-                        closedBuilder: (context, VoidCallback openContainer) {
-                          DrinksItemModel data = dataItems[index];
-                          return DrinkCard(
-                            title: data.strDrink,
-                            category: data.strCategory,
-                            path: data.strDrinkThumb ?? defaultImagePath,
-                            onClick:openContainer
-                          );
-                        }),
+                    itemBuilder: (context, index) {
+                      DrinksItemModel data = dataItems[index];
+                      return OpenContainer(
+                          closedColor: whiteColor,
+                          openColor: whiteColor,
+                          transitionDuration: const Duration(milliseconds: 600),
+                          openBuilder: (context, _) => DrinkDetail(Category: data.strCategory, alco: data.strAlcoholic, Title: data.strDrink, content: data.strInstructions, image: data.strDrinkThumb, ),
+                          closedBuilder: (context, VoidCallback openContainer) {
+                            return DrinkCard(
+                                title: data.strDrink,
+                                category: data.strCategory,
+                                path: data.strDrinkThumb ?? defaultImagePath,
+                                onClick:openContainer
+                            );
+                          });
+                    }
 
                     //
                   ),

@@ -6,37 +6,16 @@ import '../const.dart';
 import '../model/Drinks_item_model.dart';
 
 
-class DrinkDetail extends StatefulWidget {
-  final int index;
+class DrinkDetail extends StatelessWidget {
+ final Title ;
+  final  Category ;
+  final  alco ;
+  final  image ;
+  final  content  ;
 
-  const DrinkDetail({Key? key,required this.index}) : super(key: key);
-
-  @override
-  State<DrinkDetail> createState() => _DrinkDetailState();
-}
-
-class _DrinkDetailState extends State<DrinkDetail> {
-  late DrinksItemModel dataItems;
-  var Title ;
-  var Category ;
-  var alco ;
-  var image ;
-  var content  ;
+  const DrinkDetail({Key? key,required this.image,required this.content,required this.alco, required this.Category, required this.Title}) : super(key: key);
 
 
-  @override
-  void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
-    super.didChangeDependencies();
-    final provider = Provider.of<MyProvider>(context);
-    dataItems =provider.drinks[widget.index];
-    Title = dataItems.strDrink;
-    Category = dataItems.strCategory;
-    alco = dataItems.strAlcoholic;
-    image = dataItems.strDrinkThumb;
-    content = dataItems.strInstructions;
-
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +85,7 @@ class _DrinkDetailState extends State<DrinkDetail> {
                         textStyle: const TextStyle(
                             fontSize: 29,
                             fontWeight: FontWeight.w900,
-                            color: orangeTextColor
+                            color: whiteTextColor
                         ),
                       ),
                     ),
@@ -120,7 +99,7 @@ class _DrinkDetailState extends State<DrinkDetail> {
                             textStyle: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
-                                color: orangeTextColor
+                                color: whiteTextColor
                             ),
                           ),
                         ),
@@ -131,7 +110,7 @@ class _DrinkDetailState extends State<DrinkDetail> {
                             textStyle: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
-                                color: orangeTextColor
+                                color: whiteTextColor
 
                             ),
                           ),
@@ -148,7 +127,7 @@ class _DrinkDetailState extends State<DrinkDetail> {
                             textStyle: const TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600,
-                                color: orangeTextColor
+                                color: whiteTextColor
 
                             ),
                           ),
