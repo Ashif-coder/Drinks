@@ -85,7 +85,7 @@ class DrinkDetail extends StatelessWidget {
                         textStyle: const TextStyle(
                             fontSize: 29,
                             fontWeight: FontWeight.w900,
-                            color: whiteTextColor
+                            color: OrangeTextColor
                         ),
                       ),
                     ),
@@ -99,7 +99,7 @@ class DrinkDetail extends StatelessWidget {
                             textStyle: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
-                                color: whiteTextColor
+                                color: OrangeTextColor
                             ),
                           ),
                         ),
@@ -110,7 +110,7 @@ class DrinkDetail extends StatelessWidget {
                             textStyle: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
-                                color: whiteTextColor
+                                color: OrangeTextColor
 
                             ),
                           ),
@@ -127,7 +127,7 @@ class DrinkDetail extends StatelessWidget {
                             textStyle: const TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600,
-                                color: whiteTextColor
+                                color: OrangeTextColor
 
                             ),
                           ),
